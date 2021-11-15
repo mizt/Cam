@@ -37,7 +37,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 let h:Int = Int(Double(Wrapper.shared.height)*(bounds.width/Double(Wrapper.shared.width)))
                 view!.frame = CGRect(x:0, y:(Int(bounds.height)-h)>>1, width:Int(bounds.width), height:h)
                 view!.backgroundColor = UIColor.lightGray
-                
             }
         }
         else {

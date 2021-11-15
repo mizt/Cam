@@ -18,12 +18,15 @@ void addMethod(Class cls,NSString *method,id block,const char *type,bool isClass
 
 
 #import "FileManager.h"
+
+#if TARGET_OS_SIMULATOR
 #define STB_IMAGE_WRITE_IMPLEMENTATION
 #define STB_IMAGE_IMPLEMENTATION
 #define STBI_ONLY_PNG
 namespace stb_image {
     #import "stb_image.h"
 }
+#endif
 
 #import "Plane.h"
 #import "MetalLayer.h"
